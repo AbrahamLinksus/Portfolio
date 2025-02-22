@@ -56,7 +56,10 @@ a:hover{
 
 #hamburger-nav {
     display: none;
+    flex-direction: column;
+    align-items: center;
 }
+
 .hamburger-menu{
     position: relative;
     display: inline-block;
@@ -68,4 +71,11 @@ a:hover{
     height: 24px;
     width: 30px;
     cursor: pointer;
+}
+.hamburger-icon span {
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color: black;
+    margin: 5px 0;
 }
