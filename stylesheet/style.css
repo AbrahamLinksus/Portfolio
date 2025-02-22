@@ -1,33 +1,54 @@
+/*GENERAL*/
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Atkinson Hyperlegible Mono ", sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
 p {
-    color: #ffffff    ;
-    font-size: 20px;
-    font-style: italic;
-    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(85, 85, 85);
+}
+/*TRANSITION*/
 
-}
-h1 {
-    font-size: 30px;
-    text-align: center;
-    color: #ffffff ;
-    margin:0;
-    padding: 20px 0;
-    text-shadow: 3px 3px 1px red;
-}
-.hash1 {
-    color: #ffffff ;
-    font-style: italic;
-    font-weight: bold;
+a, .btn {
+    transition: all 300ms ease;
 }
 
-body{
-    margin:10px auto;
-    padding:0 20px 20px 20px;
-
+/*DESKTOP NAVIGATION */
+nav, .nav-links{
+    display: flex;
 }
-html{
-    background-color: #000000;
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height: 17vh;
 }
-img {
-    display: block;
-    margin: 0 auto;
+.nav-links{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+a{
+    color: black;
+    text-decoration: none;
+    text-decoration-color: white;
+}
+a:hover{
+    color:gray;
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+    text-decoration-color: rgb(181, 181, 181);
+}
+.logo {
+    font-size: 2rem;
+}
+.logo:hover {
+    cursor: default;
 }
