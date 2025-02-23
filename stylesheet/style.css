@@ -161,9 +161,12 @@ a:hover{
 section {
     padding-top: 4vh;
     height: 96vh;
-    margin: 0 10rem;
+    margin: 0 16rem;
     box-sizing: border-box;
     min-height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 .section-container {
     display: flex;
@@ -172,9 +175,9 @@ section {
 /*PROFILE SECTION */
 #profile {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    gap: 2rem;
+    gap: 3rem;
     height: 80vh;
 }
 .section__pic-container {
@@ -192,15 +195,15 @@ section {
   }
   
 .section-text {
-    align-self: flex-end;
+    align-self: center;
     text-align: left;
-    margin-left: -100px;
+    margin-left: 1rem;
 }
 .section__text p{
     font-weight: 600;
 }
 .section__text__p1 {
-    text-align: center;
+    text-align: flex-start;
 }
 .section__text__p2 {
     font-size: 1.5rem;
