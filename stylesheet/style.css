@@ -173,7 +173,8 @@ section {
 #profile {
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    align-items: center;
+    gap: 2rem;
     height: 80vh;
 }
 .section__pic-container {
@@ -182,7 +183,6 @@ section {
     width: 450px;
     overflow: hidden;
     border-radius: 20px;
-    margin-right: 350px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5); /* Creates depth */
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;;
 }
@@ -192,11 +192,11 @@ section {
   }
   
 .section-text {
-    align-self: center;
-    text-align: center;
+    align-self: flex-end;
+    text-align: left;
+    margin-left: -100px;
 }
 .section__text p{
-
     font-weight: 600;
 }
 .section__text__p1 {
