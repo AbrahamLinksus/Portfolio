@@ -58,6 +58,10 @@ html {
     transform: scale(1.2);
 }
 /* Container for text */
+#section-1 {
+    margin: 0;
+    padding: 0;
+}
 .section-1-text {
     display: flex;
     flex-direction: column;
