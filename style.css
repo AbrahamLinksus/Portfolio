@@ -103,10 +103,20 @@ html {
     border-radius: 20px;
     justify-content: center;
     align-items: center;
-    
     opacity: 0.5;
+    gap: 20px;
+}
+.section-2 img {
+    display: inline-flex;
+    background-color: white;
+    border-radius: 50%;
+    height: auto;
+    width: 50px;
 }
 .section-2-contacts {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     height: 100%;
     flex-basis: 50%;
     align-items: center;
