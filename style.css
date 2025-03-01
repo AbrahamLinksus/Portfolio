@@ -145,16 +145,24 @@ html {
     margin: 40px;
 }
 #section-3 {
-    margin: 50px;
+    margin: 100px;
+    height: 100vh;
 }
 .section-3 h2 {
+    color: 1d1f21;
     font-family: 'Atkinson Hyperlegible Mono', sans-serif;
 }
 .section-3-imgtext {
     display: flex;
+    
 }
 .section-3-img {
     height: auto;
-    width: 30%;
+    width: 40%;
     border-radius: 20px;
+}
+.section-3-text {
+    margin: 60px;
+    flex-basis: 50%;
+    font-family: DM sans;
 }
