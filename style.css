@@ -41,6 +41,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    
 }
 .nav-links {
     display: flex;
@@ -78,6 +79,19 @@ html {
     margin: 5px 0;
     line-height: 1.2; 
 }
+.section-text-1:hover {
+    animation: wobble 0.4s ease-in-out infinite;
+}
+@keyframes wobble {
+    0% { transform: translate(0px, 0px) rotate(0deg); }
+    15% { transform: translate(-5px, 2px) rotate(-3deg); }
+    30% { transform: translate(4px, -3px) rotate(5deg); }
+    45% { transform: translate(-3px, 5px) rotate(-8deg); }
+    60% { transform: translate(6px, -4px) rotate(6deg); }
+    75% { transform: translate(-4px, -6px) rotate(-4deg); }
+    90% { transform: translate(3px, 3px) rotate(3deg); }
+    100% { transform: translate(0px, 0px) rotate(0deg); }
+}
 
 .section-1-text h1 {
     margin: 5px 0;
@@ -114,6 +128,7 @@ html {
     width: 50px;
 }
 .section-2-contacts {
+    margin-left: 40px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -127,5 +142,19 @@ html {
     flex-basis: 50%;
     font-size: 20px;
     font-family: DM sans ;
+    margin: 40px;
 }
-
+#section-3 {
+    margin: 50px;
+}
+.section-3 h2 {
+    font-family: 'Atkinson Hyperlegible Mono', sans-serif;
+}
+.section-3-imgtext {
+    display: flex;
+}
+.section-3-img {
+    height: auto;
+    width: 30%;
+    border-radius: 20px;
+}
