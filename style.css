@@ -56,6 +56,7 @@ html {
 }
 .nav-links a:hover {
     text-decoration: underline;
+    text-underline-offset: 10px;
     color: gray;
     transform: scale(1.2);
 }
@@ -145,25 +146,25 @@ html {
     margin: 40px;
 }
 #section-3 {
-    margin: 50px;
+    margin: 50px 50px 0 50px;
     height: 100vh;
     padding: 30px;
 }
-.section-3 h2 {
-    height: 200px;
-    text-decoration: underline;
-    color: 1d1f21;
+.section-3-heading {
+    height: 125px;
+    color: white;
     font-family: 'Atkinson Hyperlegible Mono', sans-serif;
 }
 .section-3-imgtext {
     display: flex;
-    
 }
 .section-3-img {
     height: auto;
     width: 30%;
     border-radius: 20px;
     transition: transform 0.3s ease-in-out;
+    border-color: #1d1f21;
+    border: 1.5px solid;
 }
 .section-3-img:hover {
     transform: scale(1.1);
@@ -171,7 +172,7 @@ html {
 .section-3-text {
     margin: 60px;
     flex-basis: 50%;
-    font-family: DM sans;
+    font-family: 'Atkinson Hyperlegible Mono' sans-serif;
     color: #747878;
     font-size: 24px;
 }
