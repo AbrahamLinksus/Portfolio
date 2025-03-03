@@ -189,9 +189,19 @@ html {
 }
 .section-4-left {
     flex-basis: 50%;
-    border: 10px;
-    border-color: white;
 }
 .section-4-right {
     flex-basis: 50%;
+}
+.section-4-code-text {
+    font-size: 20px;
+    margin: 50px;
+}
+.section-4-language-list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    list-style: none;
+    margin: 50px;
+
 }
