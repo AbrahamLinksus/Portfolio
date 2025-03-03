@@ -175,3 +175,23 @@ html {
     color: #747878;
     font-size: 24px;
 }
+.section-4-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin: 20px;
+}
+.section-4-below {
+    margin: 30px;
+    display: flex;
+    height: 90vh;
+}
+.section-4-left {
+    flex-basis: 50%;
+    border: 10px;
+    border-color: white;
+}
+.section-4-right {
+    flex-basis: 50%;
+}
