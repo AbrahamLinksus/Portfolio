@@ -47,36 +47,7 @@
     </div>
     <div id="section-4">
         <div class="section-4-heading">
-            <h3>Skills : </h3>
-        </div>
-        <div class="section-4-below">
-            <div class="section-4-left hidden">
-                <h2 class="section-4-code-heading">Languages :</h2>
-                <p class="section-4-code-text">These are some of the languages that I have learnt over the years to implement many projects...</p>
-                <ul class="section-4-language-list">
-                    <li>Python</li>
-                    <li>C</li>
-                    <li>C++</li>
-                    <li>Java</li>
-                    <li>JavaScript</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>SQL</li>
-                </ul>
-            </div>
-            
-            <div class="section-4-right hidden">
-                <h2 class="section-4-code-heading">Tools: </h2>
-                <p class="section-4-code-text-2">These here are some tools that I have learned to use and still do continue to use ......</p>
-                <ul class="section-4-tools-list">
-                    <li>VS Code</li>
-                    <li>WSL</li>
-                    <li>MySQL</li>
-                    <li>GitHub</li>
-                    <li>Obsidian</li>
-                    <li>Sublime Text</li>
-                </ul>
-            </div>
+            <h1>TECH STACK: </h1>
         </div>
     </div>
     <div class="flex">
@@ -106,25 +77,5 @@
 
     document.querySelectorAll('.hidden').forEach(el => observer.observe(el));
 </script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const hiddenElements = document.querySelectorAll(".hidden");
-    
-        function fadeInOnScroll() {
-            hiddenElements.forEach((element) => {
-                const elementTop = element.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-    
-                if (elementTop < windowHeight - 100) { // Adjust trigger point
-                    element.classList.add("visible");
-                }
-            });
-        }
-    
-        window.addEventListener("scroll", fadeInOnScroll);
-        fadeInOnScroll(); // Run on page load in case elements are already in view
-    });
-    </script>
-    
 </body>
 </html>
