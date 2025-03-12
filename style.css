@@ -183,38 +183,36 @@ html {
 .section-4-language {
     color: 1d1f21;
 }
+..section-4-language {
+    text-align: center; /* Center the title */
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
 .section-4-language-content {
+    margin: 50px auto;
     display: flex;
-    gap: 40px;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    justify-content: center; /* Centers tiles horizontally */
+}
+
+.tile {
+    width: 120px; /* Ensures all tiles are the same width */
+    height: 50px; /* Consistent height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: #1d1f21;
-}
-.html {
     border-radius: 20px;
+    border: 2px solid white; /* White border */
+    color: white; /* Ensures text is visible */
+    font-size: 16px;
+    font-family: sans-serif;
 }
-.css {
-    border-radius: 20px;
-}
-.javascript {
-    border-radius: 20px;
-}
-.python {
-    border-radius: 20px;
-}
-.c {
-    border-radius: 20px;
-}
-.c++ {
-    border-radius: 20px;
-}
-.java {
-    border-radius: 20px;
-}
-.sql {
-    border-radius: 20px;
-}
-.twcss {
-    border-radius: 20px;
-}
-.temp {
-    border-radius: 20px;
+
+/* Apply .tile class to all elements */
+.html, .css, .javascript, .python, .c, .cpp, .java, .sql, .twcss, .temp {
+    @extend .tile;
 }
