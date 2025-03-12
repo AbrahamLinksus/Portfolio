@@ -174,45 +174,74 @@ html {
 }
 .section-4 {
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.section-4 h2 {
+    margin: 20px auto;
 }
 .section-4-heading {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+/* Styles for the entire section */
 .section-4-language {
-    color: 1d1f21;
-}
-..section-4-language {
-    text-align: center; /* Center the title */
+    text-align: center; /* Centers the heading */
     color: white;
     font-size: 20px;
     font-family: sans-serif;
 }
 
-.section-4-language-content {
-    margin: 50px auto;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap; /* Allows wrapping for responsiveness */
-    justify-content: center; /* Centers tiles horizontally */
+//* Styles for the section */
+.section-4-language {
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: left; /* Keeps title left-aligned */
+    margin-left: 50px; /* Adjust left margin if needed */
 }
 
+/* Centered grid container for tiles */
+.section-4-language-content {
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* 5 items per row */
+    gap: 5px; /* 5px gap between tiles */
+    justify-content: center; /* Center the grid */
+    width: fit-content; /* Prevents stretching */
+}
+
+/* Tile styling */
 .tile {
-    width: 120px; /* Ensures all tiles are the same width */
-    height: 50px; /* Consistent height */
+    width: 140px; /* Increased size */
+    height: 60px; /* Increased height */
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #1d1f21;
     border-radius: 20px;
-    border: 2px solid white; /* White border */
-    color: white; /* Ensures text is visible */
-    font-size: 16px;
+    border: 2px solid white;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
     font-family: sans-serif;
+    transition: transform 0.2s ease-in-out;
 }
 
-/* Apply .tile class to all elements */
+/* Hover effect */
+.tile:hover {
+    transform: scale(1.1); /* Zoom in slightly */
+}
+
+/* Responsive design: 2 tiles per row on smaller screens */
+@media (max-width: 600px) {
+    .section-4-language-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 .html, .css, .javascript, .python, .c, .cpp, .java, .sql, .twcss, .temp {
     @extend .tile;
 }
