@@ -185,37 +185,31 @@ html {
     align-items: center;
     justify-content: center;
 }
-/* Styles for the entire section */
 .section-4-language {
-    text-align: center; /* Centers the heading */
+    text-align: center; 
     color: white;
     font-size: 20px;
     font-family: sans-serif;
 }
 
-//* Styles for the section */
 .section-4-language {
     color: white;
     font-size: 20px;
     font-family: sans-serif;
-    text-align: left; /* Keeps title left-aligned */
-    margin-left: 50px; /* Adjust left margin if needed */
+    text-align: left; 
+    margin-left: 50px; 
 }
-
-/* Centered grid container for tiles */
 .section-4-language-content {
     margin: 50px auto;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* 5 items per row */
-    gap: 5px; /* 5px gap between tiles */
-    justify-content: center; /* Center the grid */
-    width: fit-content; /* Prevents stretching */
+    grid-template-columns: repeat(5, 1fr); 
+    gap: 5px;
+    justify-content: center; 
+    width: fit-content;
 }
-
-/* Tile styling */
 .tile {
-    width: 140px; /* Increased size */
-    height: 60px; /* Increased height */
+    width: 140px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,20 +222,14 @@ html {
     font-family: sans-serif;
     transition: transform 0.2s ease-in-out;
 }
-
-/* Hover effect */
 .tile:hover {
-    transform: scale(1.1); /* Zoom in slightly */
+    transform: scale(1.1);
 }
-
-/* Responsive design: 2 tiles per row on smaller screens */
 @media (max-width: 600px) {
     .section-4-language-content {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-
 .html, .css, .javascript, .python, .c, .cpp, .java, .sql, .twcss, .temp {
     @extend .tile;
 }
