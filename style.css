@@ -177,19 +177,6 @@ html {
     align-items: center;
     justify-content: center;
 }
-.section-4 h2 {
-    margin: 20px auto;
-}
-.section-4-heading {
+.section-4-content {
     display: flex;
-    align-items: center;
-    justify-content: center;
 }
-/* Styles for the entire section */
-.section-4-language {
-    text-align: center; /* Centers the heading */
-    color: white;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
